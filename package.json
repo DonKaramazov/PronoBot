@@ -13,7 +13,8 @@
   "dependencies": {
     "discord.js": "^11.5.1",
     "enmap": "^5.2.3",
-    "mongoose": "^5.7.12"
+    "mongoose": "^5.7.12",
+    "mongoose-auto-increment": "^5.0.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.1"
