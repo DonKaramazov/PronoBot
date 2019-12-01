@@ -27,4 +27,27 @@ betSchema.plugin(autoIncrement.plugin, {
   field: "numBet",
   startAt: 7
 });
+
+//methods
+betSchema.methods.GetOdds = function GetOdds(libBet) {
+  let odds;
+
+  switch (libBet) {
+    case "1":
+      odds = this.domOdds;
+      break;
+    case "N":
+      odds = this.drawOdds;
+      break;
+    case "2":
+      odds = this.extOdds;
+      break;
+    //todo lancer une exception
+    default:
+      break;
+  }
+
+  return odds;
+};
+
 module.exports = mongoose.model("Bet", betSchema);

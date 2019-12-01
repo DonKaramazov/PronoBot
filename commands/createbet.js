@@ -32,7 +32,6 @@ module.exports = {
         extOdds: ext
       });
 
-      // todo -- beau message
       bet
         .save()
         .then(result => console.log(result))
