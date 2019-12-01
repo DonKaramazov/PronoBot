@@ -21,7 +21,7 @@ module.exports = {
 
     if (!bet) {
       return message.reply(
-        `Le pari avec l'identifiant ${idBet} ne semble pas exister`
+        `Le pari avec l'identifiant ${idBet} ne semble pas ou plus exister`
       );
     }
 
